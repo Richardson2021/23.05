@@ -34,10 +34,25 @@ a{
 .category{
   border: none;
   text-decoration: none;
-  background-color:#e0e0ee;
+  background-color: transparent;
   color: rgb(34, 28, 28);
   padding: 1rem;
   cursor: pointer;
+  font-size: 2.1rem;
+  justify-content: space-between;
+
+}
+button:hover{
+  color:rgb(103, 221, 138);
+  border-bottom-color:rgb(96, 209, 139);
+  text-decoration-line: underline;
+  text-decoration-color: rgb(114, 230, 153);
+}
+
+.logo{
+  position: absolute;
+  align-items: center;
+  justify-content: center;
   
 }
 
@@ -54,7 +69,7 @@ header{
 }
 
 header a {
-  color: rgb(58, 58, 55);
+  color: rgb(129, 129, 116);
   text-decoration: none;
 }
 main{
@@ -64,7 +79,7 @@ main{
 footer{
   grid-area: footer;
   background-color: rgb(170, 156, 156);
-  color:rgb(156, 156, 126);
+  color:rgb(223, 223, 210);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -129,12 +144,12 @@ footer{
 .button{
   padding: 1rem;
   border: .1rem #c0c0c0 solid;
-  background-color:rgb(138, 138, 122);
+  background-color:rgb(221, 221, 202);
   cursor: pointer;
 
 }
 .button-primary{
-  background-color:rgb(126, 118, 118);
+  background-color:rgb(219, 202, 202);
 
 }
 
@@ -149,4 +164,26 @@ footer{
 
 .cart-header{
   border-buttom: 0.1rem #c0c0c0 solid;
+}
+
+.cart-items{
+  padding: 0;
+  width: 100%;
+  list-style-type: none;
+}
+
+.cart-items img{
+  width: 5rem;
+}
+
+.cart-items li{
+  display: flex;
+}
+
+.cart-items li div{
+  padding: 0.5rem;
+}
+
+.cart-items li div:last child {
+  flex: 1;
 }
