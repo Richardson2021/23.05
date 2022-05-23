@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");  
+
+html{
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body,
+ #root{
+  height: 100vh;
+  margin: 0;
+}
+
+body, input, select, button, textarea{
+  font-size: 1.6rem;
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  
+}
+
+a{
+  text-decoration: none;
+  
+}
+
+.grid-container{
+  display: grid;
+  grid-template-areas: "header"
+  "main"
+  "footer";
+  grid-template-rows: 5rem 1fr 5rem;
+  grid-template-columns: 1fr; 
+  height: 100%;
+}
+.category{
+  border: none;
+  text-decoration: none;
+  background-color:#e0e0ee;
+  color: rgb(34, 28, 28);
+  padding: 1rem;
+  cursor: pointer;
+  
+}
+
+
+a:hover{
+  color:rgb(15, 185, 143);
+}
+
+header{
+  grid-area: header;
+  background-color: rgb(238, 224, 224);
+  color: white;
+  
+}
+
+header a {
+  color: rgb(58, 58, 55);
+  text-decoration: none;
+}
+main{
+  grid-area: main;
+}
+
+footer{
+  grid-area: footer;
+  background-color: rgb(170, 156, 156);
+  color:rgb(156, 156, 126);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content{
+  display: flex;
+  flex-wrap: wrap;
+}
+.main{
+  flex: 3 60rem; 
+}
+
+
+.sidebar{
+  flex: 1 10rem;
+}
+.products{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.products li{
+  flex: 1 1 29rem;
+  height: 47rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.product{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+
+}
+
+.product img{
+  max-width: 37rem;
+  max-height: 37rem;
+}
+
+.product-price{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-price div,
+.product-price button {
+  text-align: center;
+  flex: 1;
+
+}
+
+.product-price div {
+  font-size: 2rem;
+
+}
+.button{
+  padding: 1rem;
+  border: .1rem #c0c0c0 solid;
+  background-color:rgb(138, 138, 122);
+  cursor: pointer;
+
+}
+.button-primary{
+  background-color:rgb(126, 118, 118);
+
+}
+
+.button:hover{
+  border: 0.1rem #515a59 
+}
+.cart{
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+}
+
+.cart-header{
+  border-buttom: 0.1rem #c0c0c0 solid;
+}
